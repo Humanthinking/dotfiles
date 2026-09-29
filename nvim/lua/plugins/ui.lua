@@ -37,7 +37,13 @@ return {
         hl.MsgArea = { fg = "#ffffff" } -- 명령어 입력창 글자색
         hl.Folded = { bg = "none", fg = "#7aa2f7" } -- 코드 접힌 부분 가독성
 
+        -- (주석) 기울임체로 설정
         hl.Comment = { fg = "#9aa5ce", italic = true }
+
+        hl.Visual = {
+          bold = true,
+          bg = "#3e4452",
+        }
       end,
     })
 
