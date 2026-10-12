@@ -3,6 +3,21 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        -- 모든 LSP에 적용할 키맵
+        ["*"] = {
+          keys = {
+            {
+              "<leader>ss",
+              function()
+                Snacks.picker.lsp_symbols({
+                  filter = { default = true },
+                })
+              end,
+              desc = "LSP Symbols (All)",
+              has = "documentSymbol",
+            },
+          },
+        },
         -- C/C++
         clangd = {
           cmd = {

@@ -57,5 +57,13 @@ return {
     "nvim-treesitter/nvim-treesitter",
     enabled = false,
   },
-}
 
+  {
+    "folke/which-key.nvim",
+    enabled = true,
+    opts = {
+      delay = 300,
+      preset = "modern",
+    },
+  },
+}

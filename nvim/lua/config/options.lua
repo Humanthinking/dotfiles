@@ -11,3 +11,4 @@ vim.opt.ambiwidth = "single" -- 한글/특수문자 폭 문제를 줄이기 위�
 vim.opt.updatetime = 300 -- CursorHold와 진단 표시 반응 속도 조정
 vim.opt.exrc = true
 vim.opt.secure = true
+vim.g.lazyvim_picker = "snacks"
